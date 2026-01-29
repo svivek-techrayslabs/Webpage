@@ -20,9 +20,9 @@ body{
     bottom:0;
     right:0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1%,
-                                                 rgba(255, 255, 255, 0) 50%,
-                                                 rgba(0, 0, 0, 0.5)100%),
+    background-image: linear-gradient(to bottom, #00000080 1%,
+                                                 #ffffff00 50%,
+                                                 #00000080 100%),
                                                    url("img/mountain-dreams.jpg");                                          
     background-size: cover;
     background-position: center;
@@ -38,14 +38,11 @@ body{
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     justify-content: space-between;
     width: 100%;
-    box-sizing: border-box;
     padding: 10px 10px 0px 50px;
-    
-    
+ 
 }
 
 header {
@@ -77,7 +74,6 @@ header {
     align-items: center;
     margin: auto;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     padding: 8px;
     cursor: pointer;
 }
@@ -110,10 +106,10 @@ header {
     width: 40px;
     cursor: pointer;
     margin:auto;
-    background: rgba(73, 73, 73, 0.5);
+    background: #49494980;
     backdrop-filter: blur(30px);
     border-radius: 25%;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid #ffffff66;
     display: flex;
     stroke: white;
     stroke-width: 2;
@@ -133,7 +129,7 @@ header {
     gap: 1.2rem;
     padding: 5vh 60px 60px 60px;
     border-radius: 25px;
-    border: 2px solid rgb(122, 121, 121);
+    border: 2px solid #7a7979;
     max-width: 780px;
     width: 90%;
     max-height: 85vh;
@@ -141,7 +137,7 @@ header {
     min-height: 0;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.50);
+    background: #00000080;
     backdrop-filter: blur(10px);
     z-index: 500;
 
@@ -152,7 +148,7 @@ header {
 .overlayHeadings{
     font-size: 2.8em;
     font-weight: 450;
-    max-width: max-content;
+    max-width: min-content;
     position: relative;
     box-sizing: border-box;
     padding-bottom: 20px;
@@ -189,7 +185,7 @@ header {
     gap: 1.2rem;
     font-weight: 300;
     font-size: 1.2rem;
-    color: rgb(232, 232, 232);
+    color: #e8e8e8;
 }
 
 .contactOverlay p{
@@ -198,7 +194,7 @@ header {
     padding-bottom: 1.2rem;
     font-weight: 400;
     font-size: 1.1rem;
-    color: rgb(232, 232, 232);
+    color: #e8e8e8;
 
 }
 
@@ -209,7 +205,7 @@ header {
   top: 10px;
   width: 4px;
   height: 4px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #ffffff80;
   border-radius: 50%;
 
 }
@@ -240,11 +236,11 @@ header {
 
 .testimonialBox{
 
-  background: rgba(99, 97, 97, 0.5);
+  background: #63616180;
   padding: 45px;
   border-radius: 20px;
-  border-left: 4px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 5px 5px 30px rgba(0, 0, 0,0.4);
+  border-left: 4px solid #ffffff80;
+  box-shadow: 5px 5px 30px #00000066;
 }
 
 .content{
@@ -284,22 +280,22 @@ header {
 }
 
 input, textarea{
-    background:rgba(71, 71, 71, 0.3);
+    background:#4747474d;
     border-radius: 10px;
     padding: 20px;
-    border:2px solid rgba(255, 255, 255, 0.2)
+    border:2px solid #ffffff33
 }
 
 input::placeholder,textarea::placeholder{
-    color: rgba(255, 255, 255, 0.5) ;
+    color: #ffffff80 ;
     font-weight: 400;
 }
 
 .contactAddress{
-    background: rgba(71, 71, 71, 0.3);
+    background: #4747474d;
     border-radius: 15px;
     padding: 30px;
-    border:2px solid rgba(255, 255, 255, 0.2)
+    border:2px solid #ffffff33
 }
 
 .contactForm{
@@ -331,10 +327,10 @@ label{
 }
 
 .prevBtn{
-   background: rgba(73, 73, 73, 0.5);
+   background: #49494980;
    backdrop-filter: blur(30px);
    border-radius: 50%;
-   border: 2px solid rgba(255, 255, 255, 0.2);
+   border: 2px solid #ffffff33;
    height: 60px;
    width: 60px;
    position:absolute;
@@ -368,10 +364,10 @@ label{
 }
 
 .pauseBtn{
-   background: rgba(73, 73, 73, 0.5);
+   background: #49494980;
    backdrop-filter: blur(30px);
    border-radius: 50%;
-   border: 2px solid rgba(255, 255, 255, 0.2);
+   border: 2px solid #ffffff33;
    height: 50px;
    width: 50px;
    position:fixed;
@@ -420,7 +416,7 @@ label{
    background: rgba(73, 73, 73, 0.5);
    backdrop-filter: blur(30px);
    border-radius: 50%;
-   border: 2px solid rgba(255, 255, 255, 0.2);
+   border: 2px solid #ffffff33;
    height: 35px;
    width: 35px;
    display: flex;
@@ -447,10 +443,10 @@ label{
 
 .progressBar{
 
-   background: rgba(73, 73, 73, 0.5);
+   background: #49494980;
    backdrop-filter: blur(30px);
    border-radius: 10%;
-   border: 2px solid rgba(255, 255, 255, 0.2);
+   border: 2px solid #ffffff33;
    height: 5px;
    width: 140px;
    position:fixed;
@@ -465,7 +461,7 @@ label{
    background: rgba(73, 73, 73, 0.5);
    backdrop-filter: blur(30px);
    border-radius: 50%;
-   border: 2px solid rgba(255, 255, 255, 0.2);
+   border: 2px solid #ffffff33;
    height: 40px;
    width: 40px;
    position:fixed;
