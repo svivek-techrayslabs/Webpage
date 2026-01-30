@@ -9,3 +9,21 @@
 }
 }
 
+.progressBar{
+    animation: timer var(--duration) linear forwards;
+}
+
+
+@keyframes timer {
+
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100;
+    }
+        
+    }
+
+
