@@ -22,72 +22,79 @@
 </head>
 
 <body class=" text-white h-screen">
-    
-    
+
+
         <div class="bg" id="bg"></div>
 
-        <div class="bar flex m-0 p-5 pl-12.5 box-border justify-between w-full " id="bar">
-                <header class="text-[1.8rem] font-extrabold tracking-[3px] ">
+        <div class="bar flex m-0 p-5 pl-12.5 box-border justify-between w-full max-[968px]:px-[30px] max-[968px]:py-[20px]  max-[768px]:px-[20px] max-[768px]:py-[15px] " id="bar">
+                <header class="text-[1.8rem] font-extrabold tracking-[3px] max-[968px]:text-[1.5rem] max-[768px]:text-[1.3rem]">
                     LIVING PARALLAX
                 </header>
-            <div class="mainNav flex gap-10 items-center justify-center">
-                <a class="about justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium py-2 px-4 cursor-pointer right-0" id="about">About</a>
-                <a class="testimonials justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium py-2 px-4 cursor-pointer right-0" id="testimonials">Testimonials</a>
-                <a class="contact justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium  py-2 px-4 cursor-pointer right-0" id="contact">Contact</a>
-                <button class="fullsButton h-10.5 w-10.5 cursor-pointer ml-5 bg-[rgba(255,255,255,0.08)] backdrop-blur-2xl rounded-[25%] border-[1.5px] border-solid border-[rgba(255,255,255,0.2)] flex justify-center items-center stroke-white stroke-2 fill-none p-2.5" id="fullsButton">
-                    <svg viewBox="0 0 24 24">
+            <div class="mainNav flex gap-10 items-center justify-center max-[968px]:gap-[25px] max-[768px]:fixed max-[768px]:top-[70px] max-[768px]:left-0 max-[768px]:w-full max-[768px]:bg-[rgba(0,0,0,0.5)] max-[768px]:flex-col max-[768px]:gap-0 max-[768px]:py-[20px] max-[768px]:translate-y-[-100%] max-[768px]:opacity-0 max-[768px]:pointer-events-none max-[768px]:transition-all max-[768px]:duration-300 max-[768px]:ease-in-out max-[768px]:hover:bg-[rgba(255,255,255,0.08)] max-[768px]:active:bg-[rgba(255,255,255,0.08)]" id="mainNav">
+                <a class="about justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium py-2 px-4 cursor-pointer right-0 max-[968px]:text-[0.95rem] max-[768px]:px-[30px] max-[768px]:py-[18px] max-[768px]:w-fullmax-[768px]:text-center max-[768px]:text-[1.1rem] max-[768px]:rounded-none max-[768px]:transition-all max-[768px]:duration-300 max-[768px]:ease-in-out" id="about">About</a>
+                <a class="testimonials justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium py-2 px-4 cursor-pointer right-0 max-[968px]:text-[0.95rem] max-[768px]:px-[30px] max-[768px]:py-[18px] max-[768px]:w-fullmax-[768px]:text-center max-[768px]:text-[1.1rem] max-[768px]:rounded-none max-[768px]:transition-all max-[768px]:duration-300 max-[768px]:ease-in-out" id="testimonials">Testimonials</a>
+                <a class="contact justify-center items-center m-0 text-[1rem] tracking-[0.5px] font-medium  py-2 px-4 cursor-pointer right-0 max-[968px]:text-[0.95rem] max-[768px]:px-[30px] max-[768px]:py-[18px] max-[768px]:w-fullmax-[768px]:text-center max-[768px]:text-[1.1rem] max-[768px]:rounded-none max-[768px]:transition-all max-[768px]:duration-300 max-[768px]:ease-in-out" id="contact">Contact</a>
+                <button class="fullsButton h-10.5 w-10.5 cursor-pointer ml-5 bg-[rgba(255,255,255,0.08)] backdrop-blur-2xl rounded-[25%] border-[1.5px] border-solid border-[rgba(255,255,255,0.2)] flex justify-center items-center stroke-white stroke-2 fill-none p-2.5 max-[768px]:w-[42px] max-[768px]:h-[42px]max-[768px]:my-[15px] max-[768px]:mx-auto max-[768px]:mb-[10px] max-[768px]:rounded-[10px] max-[768px]:before:hidden" id="fullsButton">
+                    <svg class="max-[768px]:w-5 max-[768px]:h-5" viewBox="0 0 24 24">
                         <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
                     </svg>
                 </button>
             </div>
 
+                <div id="menuToggle" class="hidden max-[768px]:flex fixed top-5 right-5 w-[42px] h-[42px] bg-[rgba(255,255,255,0.12)] backdrop-blur-[12px] border border-[rgba(255,255,255,0.25)] rounded-[10px] flex-col items-center justify-center gap-[5px] cursor-pointer hover:bg-[rgba(255,255,255,0.2)] " >
+
+                <span class="block w-[20px] h-[2px] bg-white rounded"></span>
+                <span class="block w-[20px] h-[2px] bg-white rounded"></span>
+                <span class="block w-[20px] h-[2px] bg-white rounded"></span>
+                </div>
+
         </div>
 
         <div>
-            <div class=" absolute bottom-20 left-[50%] translate-x-[-50%] w-[90%] max-w-200 bg-[rgba(0,0,0,0.3)] backdrop-blur-[5px] py-6.25 px-10 rounded-[15px] border border-solid border-[rgba(255,2555,255,0.1)]" id="imgDes">
+            <div class=" absolute bottom-20 left-[50%] translate-x-[-50%] w-[90%] max-w-200 bg-[rgba(0,0,0,0.3)] backdrop-blur-[5px] py-6.25 px-10 rounded-[15px] border border-solid border-[rgba(255,2555,255,0.1)] max-[768px]:bottom-[70px] max-[768px]:px-[25px] max-[768px]:py-[20px]" id="imgDes">
                 <div class="allDes hidden change" id="imgDes0">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Mountain Dreams</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Where earth touches the sky in perfect harmony, creating breathtaking vistas</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Mountain Dreams</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Where earth touches the sky in perfect harmony, creating breathtaking vistas</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes1">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Forest Whispers</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Nature's secrets hidden in emerald depths, where tranquility meets adventure</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Forest Whispers</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Nature's secrets hidden in emerald depths, where tranquility meets adventure</p>
                 </div>
 
                 <div class="allDes hidden change " id="imgDes2">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Ocean Serenity</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Endless horizons where waves meet wonder, painting the perfect escape</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Ocean Serenity</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Endless horizons where waves meet wonder, painting the perfect escape</p>
                 </div>
 
                 <div class="allDes hidden change " id="imgDes2">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Golden Hour</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90">When the world glows with magical light, transforming every moment</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Golden Hour</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">When the world glows with magical light, transforming every moment</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes4">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Spring Bloom</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Life awakens in vibrant colors, celebrating nature's renewal</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Spring Bloom</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Life awakens in vibrant colors, celebrating nature's renewal</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes5">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Desert Vastness</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Endless dunes sculpted by wind and time, a landscape of pure beauty</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Desert Vastness</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Endless dunes sculpted by wind and time, a landscape of pure beauty</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes6">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Waterfall Majesty</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Cascading power and grace, where water carves its eternal path</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem]  max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Waterfall Majesty</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Cascading power and grace, where water carves its eternal path</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes7">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Wild Encounters</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Nature's inhabitants in their pristine habitat, untamed and free</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Wild Encounters</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Nature's inhabitants in their pristine habitat, untamed and free</p>
                 </div>
 
                 <div class="allDes hidden change" id="imgDes8">
-                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px]">Summit Glory</h2>
-                    <p class="text-[1.1rem] text-center font-normal opacity-90 ">Standing above the clouds, where adventure meets achievement</p>
+                    <h2 class=" text-[2rem] text-center font-bold mb-2.5 tracking-[1px] max-[968px]:text-[1.6rem] max-[768px]:text-[1.4rem] max-[768px]:mb-[8px]">Summit Glory</h2>
+                    <p class="text-[1.1rem] text-center font-normal opacity-90 max-[968px]:text-[1rem] max-[768px]:text-[0.95rem]">Standing above the clouds, where adventure meets achievement</p>
                 </div>
 
             </div>
@@ -106,30 +113,32 @@
 
         </div>
 
-        <div class="progressBar bg-[49494980] backdrop-blur-[30px] rounded-[10%] border-2 border-solid border-[#ffffff33] h-1.25 w-35 fixed bottom-18.75 left-25 " id="progressBar"> </div>
+        </div>
+
+        <div class="progressBar bg-[49494980] backdrop-blur-[30px] rounded-[10%] border-2 border-solid border-[#ffffff33] h-1.25 w-35 fixed bottom-18.75 left-25 max-[768px]:w-12.75" id="progressBar"> </div>
 
         <div class="allBtns" id="allBtns">
             <div id="toggleBtns">
-                <div class="prevBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-15 w-15 absolute translate-y-[-50%] top-[50%] ml-7.5 flex justify-center items-center text-[25px] cursor-pointer "  id="prevBtn">‹</div>
-                <div class="nextBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-15 w-15 absolute translate-y-[-50%] top-[50%] mr-7.5 right-[0%] flex justify-center items-center text-[25px] cursor-pointer " id="nextBtn">›</div>
+                <div class="prevBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-15 w-15 absolute translate-y-[-50%] top-[50%] ml-7.5 flex justify-center items-center text-[25px] cursor-pointer max-[768px]:ml-4 "  id="prevBtn">‹</div>
+                <div class="nextBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-15 w-15 absolute translate-y-[-50%] top-[50%] mr-7.5 right-[0%] flex justify-center items-center text-[25px] cursor-pointer max-[768px]:mr-4" id="nextBtn">›</div>
             </div>
 
-            <div class="pauseBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-12.5 w-12.5 fixed bottom-[0%] ml-7.5 mb-7.5 flex justify-center items-center fill-white p-3 cursor-pointer " id="pauseBtn">
-                <svg class="" id="pauseSvg" viewBox="0 0 24 24"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path></svg>
-                <svg class="hidden" id="playSvg" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"></path></svg>
+            <div class="pauseBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-12.5 w-12.5 fixed bottom-[0%] ml-7.5 mb-7.5 flex justify-center items-center fill-white p-3 cursor-pointer max-[768px]:w-11.25 max-[768px]:h-11.25 max-[768px]:ml-4 max-[768px]:mb-4" id="pauseBtn">
+                <svg class=" max-[768px]:[&>svg]:w-[18px] max-[768px]:[&>svg]:h-[18px]" id="pauseSvg" viewBox="0 0 24 24"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path></svg>
+                <svg class="hidden max-[768px]:[&>svg]:w-[18px] max-[768px]:[&>svg]:h-[18px]" id="playSvg" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"></path></svg>
             </div>
 
-            <div class="navigationBtns fixed h-12.5 w-35 bottom-7.5 left-25 flex justify-start items-end gap-4 " id="navigationBtns">
-                <div class="slowBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-8.75 w-8.75 flex justify-center items-center p-3 text-[20px] cursor-pointer" id="slowBtn">-</div>
-                <div class="timer min-w-11.25 h-8.75 bg-[#49494980] backdrop-blur-[10px] border-2 border-solid border-[#ffffff33] rounded-[18px] flex justify-center items-center text-[white] text-[16px] font-medium py-0 px-3" id="timer"></div>
-                <div class="fastBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-8.75 w-8.75 flex justify-center items-center p-3 text-[20px] cursor-pointer" id="fastBtn">+</div>
+            <div class="navigationBtns fixed h-12.5 w-35 bottom-7.5 left-25 flex justify-start items-end gap-4 max-[768px]:bottom-4 max-[768px]:left-20 " id="navigationBtns">
+                <div class="slowBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-8.75 w-8.75 flex justify-center items-center p-3 text-[20px] cursor-pointer  max-[768px]:h-7 max-[768px]:w-7 max-[768px]:p-2 max-[768px]:text-[16px]" id="slowBtn">-</div>
+                <div class="timer min-w-11.25 h-8.75 bg-[#49494980] backdrop-blur-[10px] border-2 border-solid border-[#ffffff33] rounded-[18px] flex justify-center items-center text-[white] text-[16px] font-medium py-0 px-3 max-[768px]:h-7 max-[768px]:min-w-9 max-[768px]:text-[14px] max-[768px]:px-2" id="timer"></div>
+                <div class="fastBtn bg-[#49494980] backdrop-blur-[10px] rounded-[50%] border-2 border-solid border-[#ffffff33] h-8.75 w-8.75 flex justify-center items-center p-3 text-[20px] cursor-pointer  max-[768px]:h-7 max-[768px]:w-7 max-[768px]:p-2 max-[768px]:text-[16px] " id="fastBtn">+</div>
             </div>
 
-            
+
         </div>
-        
-        <div class="eyeBtn bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] rounded-[50%] border-[1.5px] border-solid border-[rgba(255,255,255,0.2)] h-9 w-9 fixed bottom-15 right-7.5 flex justify-center items-center stroke-white stroke-2 fill-none p-2 cursor-pointer " id="eyeBtn">
-            <svg viewBox="0 0 24 24" class="h-4.5 w-4.5 stroke-white  stroke-2 ">
+
+        <div class="eyeBtn bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] rounded-[50%] border-[1.5px] border-solid border-[rgba(255,255,255,0.2)] h-9 w-9 fixed bottom-15 right-7.5 flex justify-center items-center stroke-white stroke-2 fill-none p-2 cursor-pointer max-[768px]:bottom-[55px] max-[768px]:right-[20px] max-[768px]:w-[32px] max-[768px]:h-[32px" id="eyeBtn">
+            <svg class="max-[768px]:[&>svg]:w-[16px] max-[768px]:[&>svg]:h-[16px]" viewBox="0 0 24 24" class="h-4.5 w-4.5 stroke-white  stroke-2 ">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
             </svg>
@@ -137,64 +146,64 @@
         
         
      
-            <div class="aboutOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-[1.2rem] pt-[5vh] px-15 pb-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)] backdrop-blur-[10px] z-500" id="aboutOverlay">
+            <div class="aboutOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-[1.2rem] pt-[5vh] px-15 pb-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)] backdrop-blur-[10px] z-500 max-[968px]:px-[30px] max-[968px]:py-[40px] max-[768px]:px-[25px] max-[768px]:py-[40px] max-[768px]:w-[95%] max-[768px]:rounded-[20px]" id="aboutOverlay">
                 <button class="closeButton bg-[#504f4f9d] border border-[#b8b8b888] rounded-[50%] h-10 w-10 absolute top-6.25 right-6.25 cursor-pointer " >x</button>
-                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 mb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0" id="overlayHeadings">About Us</h2>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Welcome to Living Parallax, where visual storytelling meets cutting-edge design. We believe in the power of images to inspire, captivate, and transport viewers to extraordinary places.</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Our mission is to showcase the world's most breathtaking landscapes and moments through an immersive, interactive experience. Each image is carefully curated to evoke emotion and wonder, utilizing parallax scrolling technology to create depth and movement that brings photography to life.</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Every scroll reveals new perspectives, every movement adds dimension, and every image tells a story waiting to be discovered.</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Take control of your time with <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> today. Bring your designs to life with <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a> resources.</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Living Parallax is a free HTML template designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a> for creating stunning fullscreen image galleries.</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >UI toggle button to hide/show all interface elements for distraction-free viewing</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Keyboard navigation (Arrow keys for slides, H key for UI toggle)</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Auto-play controls with play/pause functionality</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Smooth overlay panels for About, Testimonials, and Contact sections</p>
-                <p class="relative pl-6 gap-[1.2rem] font-light text-[1.2rem] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Beautiful stock photography provided by <a href="https://unsplash.com" target="_blank" rel="nofollow noopener">Unsplash</a>, enhanced with interactive parallax effects and customizable slideshow timing.</p>
+                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 mb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0 max-[968px]:text-[2.2rem] max-[768px]:text-[2rem] max-[768px]:mb-[25px]" id="overlayHeadings">About Us</h2>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Welcome to Living Parallax, where visual storytelling meets cutting-edge design. We believe in the power of images to inspire, captivate, and transport viewers to extraordinary places.</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Our mission is to showcase the world's most breathtaking landscapes and moments through an immersive, interactive experience. Each image is carefully curated to evoke emotion and wonder, utilizing parallax scrolling technology to create depth and movement that brings photography to life.</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Every scroll reveals new perspectives, every movement adds dimension, and every image tells a story waiting to be discovered.</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Take control of your time with <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a> today. Bring your designs to life with <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a> resources.</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Living Parallax is a free HTML template designed by <a href="https://www.tooplate.com" target="_blank" rel="nofollow noopener">Tooplate</a> for creating stunning fullscreen image galleries.</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >UI toggle button to hide/show all interface elements for distraction-free viewing</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Keyboard navigation (Arrow keys for slides, H key for UI toggle)</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Auto-play controls with play/pause functionality</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Smooth overlay panels for About, Testimonials, and Contact sections</p>
+                <p class="relative pl-6 gap-[1.2rem] font-normal text-[1.1rem] leading-[1.9] text-[#E8E8E8] before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Beautiful stock photography provided by <a href="https://unsplash.com" target="_blank" rel="nofollow noopener">Unsplash</a>, enhanced with interactive parallax effects and customizable slideshow timing.</p>
             </div>
 
-            <div class="testimonialsOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-8 pt-[5vh] px-15 pb-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)]  backdrop-blur-[30px] z-500" id="testimonialsOverlay">
+            <div class="testimonialsOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-8 pt-[5vh] px-15 pb-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)]  backdrop-blur-[30px] z-500 max-[968px]:px-[30px] max-[968px]:py-[40px] max-[768px]:px-[25px] max-[768px]:py-[40px] max-[768px]:w-[95%] max-[768px]:rounded-[20px]" id="testimonialsOverlay">
                 <button class="closeButton bg-[#504f4f9d] border border-[#b8b8b888] rounded-[50%] h-10 w-10 absolute top-6.25 right-6.25 cursor-pointer ">x</button>
-                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0" id="overlayHeadings ">Testimonials</h2>
-                <div class="testimonialBox bg-[#63616180] p-8.75 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066]  " id="testimonialBox">
+                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0 max-[968px]:text-[2.2rem]  max-[768px]:text-[2rem] max-[768px]:mb-[25px]" id="overlayHeadings ">Testimonials</h2>
+                <div class="testimonialBox bg-[#63616180] p-8.75 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066] max-[968px]:p-[28px] max-[768px]:p-[25px] max-[768px]:mb-[25px] max-[768px]:before:text-[80px]" id="testimonialBox">
                     <p class="content italic leading-loose text-[17px] pl-5 mb-4.5 " id="content">"This gallery is absolutely stunning! The parallax effect adds such an immersive quality to the images. I found myself scrolling through multiple times just to experience the smooth transitions and beautiful photography."</p>
                     <p class="writter font-normal pl-5 " id="writter">Sarah Mitchell, Photography Enthusiast</p>
                 </div>
 
-                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066]  " id="testimonialBox">
+                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066] max-[968px]:p-[28px] max-[768px]:p-[25px] max-[768px]:mb-[25px] max-[768px]:before:text-[80px]" id="testimonialBox">
                     <p class="content italic leading-loose text-[17px] mb-3.75" id="content">"As a web designer, I'm always looking for inspiration. This gallery perfectly balances aesthetics with functionality. The responsive design works flawlessly on all my devices, and the user experience is simply outstanding."</p>
                     <p class="writter font-normal" id="writter">James Rodriguez, Web Designer</p>
                 </div>
 
-                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066]  " id="testimonialBox">
+                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066] max-[968px]:p-[28px] max-[768px]:p-[25px] max-[768px]:mb-[25px] max-[768px]:before:text-[80px]" id="testimonialBox">
                     <p class="content italic leading-loose text-[17px] mb-3.75" id="content">"I've seen many photo galleries online, but none compare to this one. The attention to detail, the smooth animations, and the curated selection of images make this a truly memorable experience. Highly recommended!"</p>
                     <p class="writter font-normal" id="writter">Emily Chen, Creative Director</p>
                 </div>
 
-                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066]  "  id="testimonialBox">
+                <div class="testimonialBox bg-[#63616180] p-11.25 rounded-[20px] border-l-4 border-solid border-[#ffffff80] shadow-[5px_5px_30px_#00000066] max-[968px]:p-[28px] max-[768px]:p-[25px] max-[768px]:mb-[25px] max-[768px]:before:text-[80px]"  id="testimonialBox">
                     <p class="content italic leading-loose text-[17px] mb-3.75" id="content">"The combination of stunning visuals and innovative technology creates something truly special. Each image feels alive with the parallax movement. It's like stepping into the photographs themselves."</p>
                     <p class="writter font-normal" id="writter">Michael Thompson, Nature Photographer</p>
                 </div>
             </div>
 
-            <div class="contactOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-8 pt-[5vh] p-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)] backdrop-blur-[30px] z-500" id="contactOverlay">
+            <div class="contactOverlay hidden flex-col realtive mt-0 m-auto justify-start gap-8 pt-[5vh] p-15 rounded-[25px] border-2 border-[#7A7979] max-w-195 w-[90%] max-h-[85vh] min-h-0 overflow-y-auto bg-[rgba(0,0,0,0.4)] backdrop-blur-[30px] z-500 max-[968px]:px-[30px] max-[968px]:py-[40px] max-[768px]:px-[25px] max-[768px]:py-[40px] max-[768px]:w-[95%] max-[768px]:rounded-[20px]" id="contactOverlay">
                 <button class="closeButton bg-[#504f4f9d] border border-[#b8b8b888] rounded-[50%] h-10 w-10 absolute top-6.25 right-6.25 cursor-pointer " >x</button>
-                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0" id="overlayHeadings">Contact Us</h2>
-                <p class=" relative pl-6 pb-[1.2rem] font-normal text-[1.1rem] text-[#E8E8E8] before:content[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%]" >Have a question or want to collaborate? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+                <h2 class="overlayHeadings relative text-[2.8rem] font-normal max-w-max box-border pb-5 after:content-[''] after:absolute after:rounded-xs after:bg-[linear-gradient(to_right,#ffffff99_0%,transparent_100%)] after:h-0.5 after:w-[40%] after:bottom-0 after:left-0 max-[968px]:text-[2.2rem] max-[768px]:text-[2rem] max-[768px]:mb-[25px]" id="overlayHeadings">Contact Us</h2>
+                <p class=" relative pl-6 pb-[1.2rem] font-normal text-[1.1rem] text-[#E8E8E8] before:content[''] before:absolute before:left-0 before:top-2.5 before:w-1 before:h-1 before:bg-[#ffffff80] before:rounded-[50%] max-[768px]:text-[1rem]" >Have a question or want to collaborate? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
 
                 <form class="contactForm flex justify-start flex-col mt-0 m-auto w-full gap-[0.7rem]">
                     <label class="font-medium">NAME</label>
-                    <input class="bg-[#4747474d] rounded-[10px] p-3.5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal]" type="text" name="name" placeholder="Your name" required>
+                    <input class="bg-[#4747474d] rounded-[10px] p-3.5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal] max-[968px]:px-[18px] max-[968px]:py-[14px] max-[768px]:px-[16px] max-[768px]:py-[14px] max-[768px]:mb-[20px]" type="text" name="name" placeholder="Your name" required>
 
                     <label class="font-medium">EMAIL</label>
-                    <input class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal]" type="email" name="email" placeholder="your.email@example.com" required>
+                    <input class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal] max-[968px]:px-[18px] max-[968px]:py-[14px] max-[768px]:px-[16px] max-[768px]:py-[14px] max-[768px]:mb-[20px]" type="email" name="email" placeholder="your.email@example.com" required>
 
                     <label class="font-medium">SUBJECT</label>
-                    <input class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal]" type="text" name="subject" placeholder="What's this about?" required>
+                    <input class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal] max-[968px]:px-[18px] max-[968px]:py-[14px] max-[768px]:px-[16px] max-[768px]:py-[14px] max-[768px]:mb-[20px] " type="text" name="subject" placeholder="What's this about?" required>
 
                     <label class="font-medium">MESSAGE</label>
-                    <textarea class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal]" name="message" placeholder="Tell us more..." rows="6" required></textarea>
+                    <textarea class="bg-[#4747474d] rounded-[10px] p-5 border-2 border-solid border-[#ffffff33] placeholder:bg-[#ffffff80 ] placeholder:font-normal] max-[968px]:px-[18px] max-[968px]:py-[14px] max-[768px]:px-[16px] max-[768px]:py-[14px] max-[768px]:mb-[20px]" name="message" placeholder="Tell us more..." rows="6" required></textarea>
 
-                    <button type="submit" class="submitBtn bg-white text-black w-[35%] tracking-[1.5px] py-4 px-11.25 rounded-[10px] text-[1rem] font-medium cursor-pointer " id="submitBtn">SEND MESSAGE</button>
+                    <button type="submit" class="submitBtn bg-white text-black w-[35%] tracking-[1.5px] py-4 px-11.25 rounded-[10px] text-[1rem] font-medium cursor-pointer max-[768px]:px-[35px] max-[768px]:py-[14px] max-[768px]:text-[1rem]" id="submitBtn">SEND MESSAGE</button>
                 </form>
 
                 <div class="contactAddress bg-[#4747474d] mt-3 rounded-xl p-7.5 border border-solid border-[#ffffff33]">
@@ -205,7 +214,11 @@
                     <a>+1 (415) 555-1234</a> | <a href="mailto:hello@livingparallax.com">hello@livingparallax.com</a></p>
                 </div>
             </div>
-        
+
+            <footer class="ui-element fixed bottom-0 right-0 px-[30px] py-[15px] text-right max-[768px]:px-[15px] max-[768px]:py-[10px]">
+              <p class="text-[rgba(255,255,255,0.6)] text-[0.9rem] max-[768px]:text-[0.75rem] max-[768px]:leading-[1.5]">Copyright © 2026 Living Parallax | <a href="#" class="text-[rgba(255,255,255,0.8)] no-underline transition-colors duration-300 ease-in-out mx-[3px]" onclick="openOverlay('privacy'); return false;">Privacy</a> | Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+            </footer>
+
 
 
     <script src="logic.js"></script>
