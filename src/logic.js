@@ -12,7 +12,7 @@ const progressBar = document.getElementById("progressBar");
 const imgDes = document.getElementById("imgDes");
 
 const dot0 = document.getElementById("dot0");
-const dot1 = document.getElementById("dot1");
+const dot1 = document.getEasdasdalementById("dot1");
 const dot2 = document.getElementById("dot2");
 const dot3 = document.getElementById("dot3");
 const dot4 = document.getElementById("dot4");
